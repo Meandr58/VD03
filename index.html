@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Киноафиша</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .section-spacing {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .accordion-header .accordion-button {
+            font-size: 1.5rem; /* Увеличивает размер шрифта */
+            font-weight: bold; /* Делает текст жирным */
+            color: #333; /* Изменяет цвет текста */
+            background-color: #f8f9fa; /* Изменяет фоновый цвет кнопки */
+            border: none; /* Убирает границу кнопки */
+        }
+
+        .accordion-header .accordion-button:not(.collapsed) {
+            background-color: #e9ecef; /* Изменяет фоновый цвет кнопки, когда она раскрыта */
+            color: #000; /* Изменяет цвет текста, когда кнопка раскрыта */
+        }
+
+        .accordion-item {
+            border: 1px solid #ddd; /* Добавляет границу вокруг каждого элемента аккордеона */
+            margin-bottom: 10px; /* Добавляет отступ между элементами */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="background-color: #ffcc00; padding: 10px;">
+  <h1>Киноафиша</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><h4>Главная</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><h4>Фильмы</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><h4>Контакты</h4></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="section-spacing"></div>
+
+<!-- Слайдер (Карусель) -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="photo/voron.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Ворон, 2024</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="photo/vlastelin.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Властелин колец: Кольца власти (2022 - …)</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="photo/largovinch.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Ларго Винч: Гнев прошлого, 2024</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+    <div class="section-spacing"></div>
+<!-- Карточки -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="photo/vlastelin.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Властелин колец:<br>Кольца власти</h3>
+                    <p class="card-text">События развернутся за тысячу лет до похода хоббита Бильбо и отряда гномов к Одинокой горе, когда величайший из злодеев грозился погрузить Средиземье во тьму. Группа героев — как новых, так и хорошо знакомых — вступает с ним в неравную схватку, чтобы создать наследие, которое будет жить еще много веков.</p>
+                    <a href="#" class="btn btn-primary">Подробности</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="photo/voron.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Ворон<br>(ремейк)</h3>
+                    <p class="card-text">Пожертвовав собой, чтобы спасти возлюбленную, Эрик Дрэйвен застревает между мирами живых и мёртвых. Вернувшись с того света, он не остановится ни перед чем, чтобы свести счёты с убийцами. Отныне он Ворон, жаждущий справедливости, и его месть будет жестока как никогда.</p>
+                    <a href="#" class="btn btn-primary">Подробности</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="photo/largovinch.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Ларго Винч:<br>Гнев прошлого</h3>
+                    <p class="card-text">Во время отпуска у миллиардера Ларго Винча похищают сына. Одновременно Ларго обвиняют в убийстве. Только поняв, как связаны между собой эти разрозненные события и окунувшись в прошлое, Ларго Винч сможет противостоять загадочному и всемогущему противнику и спасти сына.</p>
+                    <a href="#" class="btn btn-primary">Подробности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-spacing"></div>
+
+<!-- Аккордеон -->
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Дэдпул и Росомаха путешествуют во времени, чтобы спасти мир
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Дэдпул и Росомаха (2024).</strong> Ведя тихий образ жизни, Уэйд Уилсон попадает в организацию «Управление временными изменениями» (УВИ), что заставляет его вернуться к альтер-эго Дэдпула и изменить историю с помощью Росомахи.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Детектив расследует дело о крупном нелегальном онлайн-казино
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Криминальный город. Возмездие (2024).</strong> Через три года после раскрытия громкого дела бескомпромиссный детектив Ма преследует группировку, распространяющую наркотики через приложение для доставки. Вскоре становится ясно, что дело связано с крупнейшим нелегальным бизнесом онлайн-казино, а одна из ключевых фигур в этой преступной схеме – бывший спецназовец: циничный и безжалостный убийца ни перед чем не остановится, чтобы добиться своей цели. Но убийца еще не знает, с кем связался. Ему придется помериться силами с самым мощным полицейским Пусана.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Комедийный хоррор о виртуальных знакомствах
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Мой парень - маньяк (2024).</strong> Молодые люди регистрируются в популярных приложениях для знакомств. Вскоре по всему городу разносится новость, что появился маньяк, выбирающий своих жертв онлайн. Как вычислить убийцу и понять, маньяк ли твой партнер или нет? Шесть историй о маньяках среди нас.
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="section-spacing"></div>
+
+<!-- Футер сайта -->
+<footer class="bg-light text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Контактная информация</h5>
+        <p>
+          Адрес: ул. Гайдая, 12, Москва<br>
+          Телефон: +7 (123) 456-78-90<br>
+          Email: info@kinoafisha.ru
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Социальные сети</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="https://facebook.
+com" class="text-dark">Facebook</a></li>
+          <li><a href="https://twitter.com" class="text-dark">Twitter</a></li>
+          <li><a href="https://instagram.com" class="text-dark">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3 bg-dark text-white">
+    © 2024 Киноафиша
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
